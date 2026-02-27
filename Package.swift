@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "MaterialComponents",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v14)
     ],
     products: [
         .library(
@@ -15,6 +15,9 @@ let package = Package(
         .target(
             name: "MaterialComponents",
             path: "Sources/MaterialComponents",
+            exclude: [
+                "private/Snapshot"
+            ],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("ActionSheet/src"),
@@ -171,7 +174,13 @@ let package = Package(
                 .headerSearchPath("private/TextControlsPrivate/src/UnderlinedStyle"),
                 .headerSearchPath("private/ThumbTrack/src"),
                 .headerSearchPath("private/ThumbTrack/src/private"),
-                .headerSearchPath("private/UIMetrics/src")
+                .headerSearchPath("private/UIMetrics/src"),
+                .headerSearchPath("MDFInternationalization/src"),
+                .headerSearchPath("MDFTextAccessibility/src"),
+                .headerSearchPath("MDFTextAccessibility/src/private"),
+                .headerSearchPath("MotionAnimator/src"),
+                .headerSearchPath("MotionAnimator/src/private"),
+                .headerSearchPath("MotionInterchange/src")
             ]
         )
     ]
