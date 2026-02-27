@@ -27,7 +27,7 @@
 #import "MaterialProgressViewStrings.h"
 #import "MaterialProgressViewStrings_table.h"
 #import "MDCMath.h"
-#import <MDFInternationalization/MDFRTL.h>
+#import "MDFRTL.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

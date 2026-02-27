@@ -26,7 +26,7 @@
 #import "MDCFlexibleHeaderShiftBehaviorEnabledWithStatusBar.h"
 #import "UIApplication+MDCAppExtensions.h"
 #import "MDCLayoutMetrics.h"
-#import <MDFTextAccessibility/MDFTextAccessibility.h>
+#import "MDFTextAccessibility.h"
 
 #if defined(TARGET_OS_VISION) && TARGET_OS_VISION
 // For code review, use the review queue listed in go/material-visionos-review.

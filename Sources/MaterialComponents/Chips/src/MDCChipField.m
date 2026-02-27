@@ -18,7 +18,7 @@
 #import "MDCChipFieldDelegate.h"
 #import "MDCChipView.h"
 #import "MDCChipViewDeleteButton.h"
-#import <MDFInternationalization/MDFRTL.h>
+#import "MDFRTL.h"
 
 NSString *const MDCEmptyTextString = @"";
 NSString *const MDCChipDelimiterSpace = @" ";
