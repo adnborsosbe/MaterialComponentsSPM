@@ -1,4 +1,5 @@
-// Copyright 2016-present the Material Components for iOS authors. All Rights Reserved.
+// Copyright 2016-present the Material Components for iOS authors. All Rights
+// Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,14 +13,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "../MDCSnackbarMessageView.h"
+#import "MDCSnackbarMessageView.h"
 
 @class MDCSnackbarMessageAction;
 
 @interface MDCSnackbarMessageView ()
 
 /**
- If the user has tapped on the Snackbar or if @c dismissWithAction:userInitiated: has been called.
+ If the user has tapped on the Snackbar or if @c
+ dismissWithAction:userInitiated: has been called.
  */
 @property(nonatomic, getter=isDismissing) BOOL dismissing;
 
@@ -39,24 +41,27 @@
 @property(nonatomic, nullable, readonly, strong) MDCSnackbarMessage *message;
 
 /**
- If the Snackbar view should be anchored to the bottom of the screen. Default is YES.
+ If the Snackbar view should be anchored to the bottom of the screen. Default is
+ YES.
  */
 @property(nonatomic) BOOL anchoredToScreenBottom;
 
 /**
  Dismisses the message view.
 
- Does not call the message's completion handler or any action handler. Must be called from the main
- thread.
+ Does not call the message's completion handler or any action handler. Must be
+ called from the main thread.
 
  @param action The action that prompted the dismissal.
- @param userInitiated Whether or not this is a user-initiated dismissal or a programmatic one.
+ @param userInitiated Whether or not this is a user-initiated dismissal or a
+ programmatic one.
  */
 - (void)dismissWithAction:(MDCSnackbarMessageAction *_Nullable)action
             userInitiated:(BOOL)userInitiated;
 
 /**
- When VoiceOver is enabled the view should wait for user action before dismissing.
+ When VoiceOver is enabled the view should wait for user action before
+ dismissing.
 
  Default is YES.
  */
@@ -70,7 +75,8 @@
 - (void)animateContentOpacityFrom:(CGFloat)fromOpacity
                                to:(CGFloat)toOpacity
                          duration:(NSTimeInterval)duration
-                   timingFunction:(CAMediaTimingFunction *_Nullable)timingFunction;
+                   timingFunction:
+                       (CAMediaTimingFunction *_Nullable)timingFunction;
 
 /**
  Animate the opacity of the Snackbar view.
@@ -89,6 +95,7 @@
  @param toScale scale to finish animation.
  @return the scale animation.
  */
-- (CABasicAnimation *_Nullable)animateSnackbarScaleFrom:(CGFloat)fromScale toScale:(CGFloat)toScale;
+- (CABasicAnimation *_Nullable)animateSnackbarScaleFrom:(CGFloat)fromScale
+                                                toScale:(CGFloat)toScale;
 
 @end

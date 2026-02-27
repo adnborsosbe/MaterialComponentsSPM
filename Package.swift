@@ -18,7 +18,7 @@ let package = Package(
             exclude: [
                 "private/Snapshot"
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("ActionSheet/src"),
                 .headerSearchPath("ActionSheet/src/Theming"),
